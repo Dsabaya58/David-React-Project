@@ -3,6 +3,7 @@ import './App.css'
 import Header from './Header'
 import Sidebar from './Sidebar'
 import Home from './Home'
+// import Products from './pages/products/products'
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
@@ -16,6 +17,7 @@ function App() {
       <Header OpenSidebar={OpenSidebar}/>
       <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
       <Home />
+      {/* <Products /> */}
     </div>
   )
 }
